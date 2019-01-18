@@ -6,6 +6,8 @@ struct Student{
     int yingyu;
     char name[100];
 };
+struct Student arr [100];
+int index = 0;
 
 int main(){
 
@@ -27,7 +29,18 @@ int main(){
         scanf("%d",&code);
 
         if(code == 1){
+            printf("Qsrxsxm\n");
+            scanf("%s",arr[index].name);
 
+            printf("Qsrxsywcj\n");
+            scanf("%d",&(arr[index].yuwen));
+
+            printf("Qsrxssxcj\n");
+            scanf("%d",&(arr[index].shuxue));
+
+            printf("Qsrxsyycj\n");
+            scanf("%d",&(arr[index].yingyu));
+            index++;
         }
         if(code == 2){
             
