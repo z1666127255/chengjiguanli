@@ -114,20 +114,41 @@ int main()
             int max = 0;
             int ID;
 
-            for(int i = 0;index;i++){
-                if(max<sum){
+            for (int i = 0; index; i++)
+            {
+                if (max < sum)
+                {
                     max = sum;
                 }
-                ID = i+1;
+                ID = i + 1;
             }
             printf("D%dMxs%sDzcjzg,Zgfw:%d\n");
             printf("Sxwc,Djhcjx\n");
-                char x;
-                scanf("%c", &x);
-                scanf("%c", &x);
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 7)
         {
+            double aver;
+            double Pj = 0;
+            int IDD = 0;
+
+            for (int i; i < index; i++)
+            {
+                aver = (arr[i].yuwen + arr[i].shuxue + arr[i].yingyu) / 3;
+
+                if (Pj < aver)
+                {
+                    Pj = aver;
+                    IDD = i + 1;
+                }
+                printf("D%dMxs%sDpjgjzg,Zgw:%lf\n", IDD, arr[IDD - 1].name, Pj);
+                printf("Sxwc,Djhcjx\n");
+                char x;
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }
         }
         if (code == 8)
         {
