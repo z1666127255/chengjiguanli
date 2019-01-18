@@ -69,8 +69,9 @@ int main()
         {
             printf("Syxscj:\n");
 
-            for(int i = 0;i<index;i++){
-                printf("%dGxsdxmw%s,Ywcjw:%d,Yycjw:%d\n",i+1,arr[i].name,arr[i].shuxue,arr[i].yuwen,arr[i].yingyu);
+            for (int i = 0; i < index; i++)
+            {
+                printf("%dGxsdxmw%s,Ywcjw:%d,Yycjw:%d\n", i + 1, arr[i].name, arr[i].shuxue, arr[i].yuwen, arr[i].yingyu);
             }
             printf("\nDjhcjx\n");
             char x;
@@ -79,12 +80,14 @@ int main()
         }
         if (code == 4)
         {
-            for(int i = 0;i<index;i++){
+            for (int i = 0; i < index; i++)
+            {
                 int sum = 0;
-                sum=arr[i].yuwen+arr[i].shuxue+arr[i].yingyu;
+                sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
 
-                if(sum<180){
-                    printf("D%dMxs%sCjbjg\n",i+1,arr[i].name);
+                if (sum < 180)
+                {
+                    printf("D%dMxs%sCjbjg\n", i + 1, arr[i].name);
                 }
             }
             printf("Sxwc,Djhcjx\n");
@@ -94,6 +97,17 @@ int main()
         }
         if (code == 5)
         {
+            for (int i = 0; i < index; i++)
+            {
+                if (arr[i].yuwen < 60 && arr[i].shuxue < 60 && arr[i].yingyu < 60)
+                {
+                    printf("D%dMxs%sDmykdbjg\n", i + 1, arr[i].name);
+                }
+                printf("Sxwc,Djhcjx\n");
+                char x;
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }
         }
         if (code == 6)
         {
