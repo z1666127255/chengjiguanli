@@ -9,6 +9,7 @@ struct Student
 };
 struct Student arr[100];
 int index = 0;
+int sum = 0;
 
 int main()
 {
@@ -82,7 +83,6 @@ int main()
         {
             for (int i = 0; i < index; i++)
             {
-                int sum = 0;
                 sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
 
                 if (sum < 180)
@@ -111,6 +111,20 @@ int main()
         }
         if (code == 6)
         {
+            int max = 0;
+            int ID;
+
+            for(int i = 0;index;i++){
+                if(max<sum){
+                    max = sum;
+                }
+                ID = i+1;
+            }
+            printf("D%dMxs%sDzcjzg,Zgfw:%d\n");
+            printf("Sxwc,Djhcjx\n");
+                char x;
+                scanf("%c", &x);
+                scanf("%c", &x);
         }
         if (code == 7)
         {
