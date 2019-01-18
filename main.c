@@ -67,6 +67,15 @@ int main()
         }
         if (code == 3)
         {
+            printf("Syxscj:\n");
+
+            for(int i = 0;i<index;i++){
+                printf("%dGxsdxmw%s,Ywcjw:%d,Yycjw:%d\n",i+1,arr[i].name,arr[i].shuxue,arr[i].yuwen,arr[i].yingyu);
+            }
+            printf("\nDjhcjx\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 4)
         {
